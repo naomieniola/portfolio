@@ -247,26 +247,11 @@
     <section class="contact py-5" id="contact">
       <div class="container">
         <div class="row">
-          
-          <?php
-          if ($_SERVER["REQUEST_METHOD"] == "POST") {
-              $name = $_POST["name"];
-              $email = $_POST["email"];
-              $message = $_POST["message"];
-          
-              $to = "naomiadesiyan@hotmail.com";
-              $subject = "New Contact Form Submission";
-              $headers = "From: $email";
-          
-              mail($to, $subject, $message, $headers);
-          }
-          ?>
-
           <div class="container d-flex align-items-center justify-content-center vh-100">
             <div class="col-lg-6 col-12">
                 <div class="contact-form">
                     <h2 class="mb-4" style="text-align: center;">Interested in working together? Let's talk</h2>
-                    <form action="index.html" method="post">
+                    <form action="submit.php" method="post">
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required>
