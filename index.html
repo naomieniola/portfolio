@@ -139,29 +139,31 @@
 
     <style>
       .prototype-container {
-          position: relative;
-          width: 100%;
-          padding-top: 56.25%; /* 16:9 aspect ratio (450 / 800 = 0.5625) */
-        }
+        position: relative;
+        width: 100%;
+        max-width: 800px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the container horizontally */
+        padding-top: 56.25%; /* 16:9 aspect ratio (450 / 800 = 0.5625) */
+      }
 
-        .responsive-iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 
-        .responsive-iframe iframe {
-          width: 100%;
-          height: 100%;
-        }
-    
+      .responsive-iframe iframe {
+        width: 100%;
+        height: 100%;
+      }
+
     </style>
     
     <div class="prototype-container">
       <div class="responsive-iframe">
-        <h2>UI Projects</h2>
+        <h2 style="text-align: center;">UI Projects</h2>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrjScfUA5uoKtacb7XXMYWB%2FFinal-Prototypes%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D415-1283%26viewport%3D3056%252C439%252C0.21%26t%3DB792kOhfn9rcQu0A-1%26scaling%3Dscale-down%26starting-point-node-id%3D415%253A1283%26mode%3Ddesign" allowfullscreen></iframe>
       </div>
     </div>
