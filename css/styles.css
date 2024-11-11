@@ -2,6 +2,7 @@
     position: relative;
     cursor: default; /* Regular cursor */
     margin-top: 0; /* Remove any top margin from the video container */
+    margin-bottom: 0;
 
 }
 
