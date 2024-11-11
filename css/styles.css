@@ -1,0 +1,98 @@
+.video-container {
+    position: relative;
+    cursor: default; /* Regular cursor */
+    margin-top: 0; /* Remove any top margin from the video container */
+
+}
+
+.video-rounded-shadow {
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    overflow: hidden;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px); /* Leave space for video controls */
+    background: transparent; /* Transparent to show the video */
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.instruction-text {
+    font-size: 1.1rem;
+    margin-bottom: 0; /* Reduce or remove the bottom margin */
+    color: #333;
+}
+
+.video-container:hover .video-overlay {
+    opacity: 0.8; /* Reduce opacity on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.teal-button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.teal-button:hover {
+    opacity: 0.8; /* Slightly transparent */
+    transform: scale(1.05); /* Increase button size slightly */
+    color: white; /* Keep the text white */
+}
+
+.modal-content {
+    max-height: 90vh; /* Limit modal height to 90% of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header, .modal-footer {
+    flex-shrink: 0; /* Keep header and footer fixed */
+}
+
+.modal-body {
+    overflow-y: auto; /* Make the body scrollable */
+    flex-grow: 1; /* Allow the body to grow and take available space */
+}
+
+.modal-section {
+    margin-bottom: 15px;
+}
+
+.modal-section h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-grid div {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}

@@ -15,6 +15,7 @@
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="css/styles.css">
 
   </head>
   <body>
@@ -68,14 +69,15 @@
                     <div class="about-text">
                         <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
                         <h1 class="animated animated-text">
-                            <span class="mr-2">Hey everyone, I'm Naomi Eniola, a</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Software Dev</span>
-                                    <span class="animated-item">UI Designer</span>
-                                </div>
-                        </h1>
+                          <span class="mr-2">Hey everyone, I'm Naomi, an aspiring</span>
+                          <span class="animated-info">
+                              <span class="animated-item">Software Eng</span>
+                              <span class="animated-item">Front-end Eng</span>
+                          </span>
+                      </h1>
+                      
 
-                        <p>Delivering a successful product is a challenge, but it is what I to do!</p>
+                        <p>I make things!</p>
                         
                         <div class="custom-btn-group mt-4">
                           <a href="NaomiAdesiyanCV.pdf" class="btn mr-lg-2 custom-btn" download><i class='uil uil-file-alt'></i> Download CV</a>
@@ -101,40 +103,99 @@
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
 
-                      <div class="col-lg-8 mx-auto">
-                        <h2 style="margin-bottom: 20px;">Things I have designed</h2>
+                     <!-- Clickable Video Container -->
+                  <section class="project py-5" id="project">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-11 text-center mx-auto col-12">
+                                <div class="col-lg-8 mx-auto">
+                                    <h2 style="">Things I have designed</h2>
+                                </div>
+                                 <!-- Instructional Text -->
+                                <p class="instruction-text">Click play to watch a demo of CloudSync and click the video to learn more.</p>
+                                <div class="container d-flex justify-content-center align-items-center vh-100">
+                                    <div class="col-md-8 video-container">
+                                        <video class="video-rounded-shadow w-100" controls>
+                                            <source src="images/project/demo-cloudsync.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <!-- Adjusted Overlay for Modal Trigger -->
+                                        <div class="video-overlay" data-toggle="modal" data-target="#cloudSyncModal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Modal -->
+                <div class="modal fade" id="cloudSyncModal" tabindex="-1" role="dialog" aria-labelledby="cloudSyncModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                          <!-- Fixed Header -->
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="cloudSyncModalLabel">CloudSync Overview</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <!-- Scrollable Body -->
+                          <div class="modal-body modal-scrollable">
+                              <!-- Introduction -->
+                              <section class="modal-section">
+                                  <h6>About CloudSync</h6>
+                                  <p>CloudSync is a streamlined web-based platform for managing and playing, designed with a focus on simplicity and user experience.</p>
+                              </section>
+                              
+                              <hr>
+                              
+                              <!-- Key Features -->
+                              <section class="modal-section">
+                                  <h6>Key Features</h6>
+                                  <ul>
+                                      <li>🎵 <strong>Seamless Audio Playback:</strong> Easy-to-use HTML audio players.</li>
+                                      <li>📁 <strong>Efficient Organisation:</strong> Categorise and manage your music effortlessly.</li>
+                                      <li>🖥️ <strong>User-Friendly Interface:</strong> Intuitive design that caters to all user levels.</li>
+                                      <li>❤️ <strong>Favourite Songs:</strong> Save your favourite tracks for quick and easy access.</li>
+                                    </ul>
+                              </section>
+                              
+                              <hr>
+                              
+                              <!-- Technologies Used -->
+                              <section class="modal-section">
+                                  <h6>Technologies Used</h6>
+                                  <div class="tech-grid">
+                                      <div><strong>ASP.NET MVC</strong><br>Backend structure</div>
+                                      <div><strong>C#</strong><br>Server-side logic</div>
+                                      <div><strong>Docker</strong><br>Containerisation</div>
+                                      <div><strong>Azure Data Studio</strong><br>Database management</div>
+                                      <div><strong>JavaScript</strong><br>Interactive front end</div>
+                                      <div><strong>Figma</strong><br>UI/UX design</div>
+                                  </div>
+                              </section>
+                              
+                              <hr>
+                              
+                              <!-- Design and Accessibility -->
+                              <section class="modal-section">
+                                  <h6>Design & Accessibility</h6>
+                                  <p>The interface employs a clean, modern colour scheme with high contrast for readability. Key <strong>HCI principles</strong> include:</p>
+                                  <ul>
+                                      <li>🔍 <strong>Visual Clarity:</strong> Accessible fonts and intuitive navigation.</li>
+                                      <li>🖱️ <strong>Easy Interaction:</strong> Clearly labelled buttons and controls.</li>
+                                      <li>🌐 <strong>Responsive Design:</strong> Optimised for different screen sizes.</li>
+                                  </ul>
+                              </section>
+                          </div>
+                          <!-- Fixed Footer -->
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
                       </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/planetart-home.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/planetart-login.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/planetart-signup.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/planetart-dis-forum.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-                      </div>
-
                   </div>
-                </div>
-        </div>
-    </section>
+              </div>
+              
 
     <style>
       .prototype-container {
@@ -161,12 +222,12 @@
 
     </style>
     
-    <div class="prototype-container">
+    <!-- <div class="prototype-container">
       <div class="responsive-iframe">
         <h2 style="text-align: center;">UI Projects</h2>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrjScfUA5uoKtacb7XXMYWB%2FFinal-Prototypes%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D415-1283%26viewport%3D3056%252C439%252C0.21%26t%3DB792kOhfn9rcQu0A-1%26scaling%3Dscale-down%26starting-point-node-id%3D415%253A1283%26mode%3Ddesign" allowfullscreen></iframe>
       </div>
-    </div>
+    </div> -->
 
     <!-- FEATURES 
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
